@@ -1,0 +1,25 @@
+﻿<Window x:Class="OptimizationMethodApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OptimizationMethodApp"
+        mc:Ignorable="d"
+        Title="Метод равномерного поиска" Height="216" Width="493">
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition/>
+			<ColumnDefinition Width="0*"/>
+		</Grid.ColumnDefinitions>
+		<TextBox x:Name="leftBorderTb" HorizontalAlignment="Left" Margin="22,43,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="18"/>
+		<TextBox x:Name="stepTb" HorizontalAlignment="Left" Margin="22,87,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="18"/>
+		<Button x:Name="CalcBtn" Content="Вычислить" HorizontalAlignment="Left" Margin="22,143,0,0" VerticalAlignment="Top" Width="120" Click="CalcBtn_Click" Height="20"/>
+		<TextBox x:Name="reportTb"  IsReadOnly="True" VerticalScrollBarVisibility="Auto" HorizontalAlignment="Left" Margin="158,43,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="301" Height="80"/>
+		<TextBox x:Name="resultTb"  IsReadOnly="True" HorizontalAlignment="Left" Margin="158,145,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="301" Height="18"/>
+		<Label Content="Левая граница" HorizontalAlignment="Left" Margin="22,17,0,0" VerticalAlignment="Top" Height="26" Width="91"/>
+		<Label Content="Шаг" HorizontalAlignment="Left" Margin="22,61,0,0" VerticalAlignment="Top" Height="26" Width="32"/>
+		<Label Content="Отчет" HorizontalAlignment="Left" Margin="158,17,0,0" VerticalAlignment="Top" Height="26" Width="42"/>
+		<Label Content="Ответ" HorizontalAlignment="Left" Margin="158,119,0,0" VerticalAlignment="Top" Height="26" Width="42"/>
+
+	</Grid>
+</Window>
